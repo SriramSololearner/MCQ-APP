@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #7cbcf4;
+  min-height: 100vh;
+  width:100%;
+}
+.heading-text{
+  color:rgb(234, 91, 39);
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+.heading-text:hover{
+  color:coral;
+}
+.container{
+  width:30em;
+  height:25em;
+  background-color: rgb(185, 214, 239);
+  border-radius: 10px;
+  
+
+}
+.question{
+  width:90%;
+  height:20%; 
+  background-color: rgb(62, 130, 162);
+  color: aliceblue;
+  position:relative;
+  top:20px;
+  left:20px;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.question:hover{
+  background-color:rgb(72, 161, 203) ;
 }
 
-.App-link {
-  color: #61dafb;
+.options{
+  margin: 10px;
+  position: relative;
+  top:30px;
+  left:50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.option-btn{
+  width:70%;
+  display: flex;
+  padding:5px 30px;
+  font-size: 17px;
+  margin-top: 10px;
+  border-radius: 5px;
+  min-height: 30px;
+  box-shadow: 3px 0px 1px 1px rgb(111, 101, 101);
+}
+
+.checked{
+  background-color: #0e87f2;
+}
+
+.option-btn:hover{
+  background-color: #7cbcf4;
+  color:blueviolet;
+
+}
+
+#next-btn{
+  position: relative;
+  top:70px;
+  left:170px;
+  padding:10px 40px;
+  margin:20 auto;
+  font-size: 15px;
+  box-shadow: 5px 5px 5px 3px rgb(74, 73, 73) ;
+  transition: 0.1s ;
+}
+
+#next-btn:hover{
+  background-color: blueviolet;
+  color:rgb(220, 224, 232);
+  border: none;
+  transition: 1s ease-in-out;
+
+}
+
+/* QuizRes.js */
+
+.cont{
+  width:100%;
+  height: 80%;
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-direction: column;
+}
+.btn button{
+  min-width: 120px;
+  min-height: 30px;
+  padding: 10px;
+  font-size: 14px;
+  border: 0;
+}
+.btn button:hover{
+  background-color: coral;
 }
